@@ -2,14 +2,18 @@
 Uso de wget para descargar archivos de mis repositorios públicos de Github en forma directa, en el directorio de Linux o DOS actual.
 
 ## Un único archivo 
-  
+
+Para descargar ```file``` del repositorio ```repo_name``` y copiarlo en ```arch_destino``` del directorio actual
+
 ### Usar:
 
-    wget https://raw.githubusercontent.com/migrassi/repo_name/branch/path/to/file 
+    wget [-O arch_destino] https://raw.githubusercontent.com/migrassi/repo_name/branch/path/to/file 
     
 ### O también:   
 
-    wget https://github.com/migrassi/repo_name/raw/branch/path/to/file    
+    wget  [-O arch_destino] https://github.com/migrassi/repo_name/raw/branch/path/to/file    
+ 
+ Si se omite ```[-O arch_destino]```, el archivo se copia con el mismo nombre que el original.
     
 ## Ejemplos:
 
